@@ -1,0 +1,172 @@
+.Bitter {
+  font-family: 'Bitter', serif;
+}
+.Martel {
+  font-family: 'Martel', serif;
+}
+.Hind {
+  font-family: 'Hind', sans-serif;
+}
+.Knewave {
+  font-family: 'Knewave', cursive;
+}
+#nav div {
+  background-color: transparent;
+  color: #0F0F0F;
+}
+#nav #nav_div {
+  width: 75%;
+  margin: 0 auto;
+}
+#nav ul {
+  width: 100%;
+  display: inline-block;
+}
+#nav .navbar-nav > li {
+  width: calc(16.66666667%);
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #34302D;
+}
+#about {
+  text-align: justify;
+}
+#program h3 {
+  font-family: 'Hind', sans-serif;
+}
+#program table {
+  width: 90%;
+  margin: 2% auto;
+}
+#program table td,
+#program table th {
+  text-align: center;
+}
+#speaker h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+#speaker .speaker-block img {
+  max-width: 90%;
+  height: auto;
+  margin: 5% auto;
+  border-radius: 999px;
+  border: 4px rgba(128, 128, 128, 0.2) solid;
+}
+#speaker .speaker-block h2 {
+  font-family: 'Knewave', cursive;
+  color: rgba(52, 48, 45, 0.8);
+  margin-bottom: 3%;
+}
+#speaker .speaker-block h3 {
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+#speaker .speaker-block p {
+  height: 100%;
+}
+#workshop img {
+  max-height: 200px;
+  max-width: 300px;
+  width: auto;
+  display: block;
+  margin: 2% auto;
+  padding-top: 5%;
+}
+#workshop h3 {
+  font-family: 'Hind', sans-serif;
+  margin-bottom: 2px;
+  text-align: left;
+  text-indent: 0px;
+  width: 80%;
+  font-weight: 500;
+}
+#workshop h4 {
+  text-indent: 0px;
+  font-size: 15px;
+  font-family: 'Knewave', cursive;
+  margin-top: 1px;
+  margin-bottom: 3%;
+  color: rgba(0, 55, 14, 0.8);
+}
+#agency h1 {
+  text-align: center;
+  margin: 5% auto -1% auto;
+}
+#agency img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+.Heading {
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+  color: #527c26;
+  margin-top: 3%;
+}
+.ImgFrame {
+  border-radius: 999px;
+  border: 4px rgba(128, 128, 128, 0.2) solid;
+}
+body {
+  font-family: 'Martel', serif;
+  text-align: justify;
+  background-color: white;
+  text-indent: 20px;
+  font-size: 15px;
+  line-height: 25px;
+}
+#about h1,
+#workshop h1,
+#speaker h1,
+#agency h1,
+#program h1 {
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+  color: #527c26;
+  margin-top: 3%;
+}
+#header {
+  height: 300px;
+  text-indent: 0px;
+}
+#header h1 {
+  font-family: 'Bitter', serif;
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-left: 5%;
+  padding-top: 10%;
+}
+#header h2 {
+  margin-left: 5%;
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 10px;
+  margin-top: 1px;
+  color: rgba(52, 48, 45, 0.8);
+}
+.page {
+  width: 70%;
+  margin: 3% auto;
+}
+#footer {
+  width: 70%;
+  height: 125px;
+  background-color: rgba(52, 48, 45, 0.9);
+  color: rgba(237, 234, 227, 0.6);
+  margin: 0 auto;
+  padding: 2%;
+  font-family: 'Hind', sans-serif;
+}
+#footer p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1px;
+}
+/*# sourceMappingURL=style.css.map */

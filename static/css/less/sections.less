@@ -1,0 +1,86 @@
+@import "nav";
+@import "sec_about";
+@import "sec_program";
+@import "sec_speaker";
+@import "sec_workshop";
+@import "sec_agency";
+@import "sec_contact";
+
+@sec_width:70%;
+@header_height:300px;
+@about_height:500px;
+@program_height:400px;
+@agency_height:300px;
+@contact_height:125px;
+
+//Mixins
+.Heading{
+	font-size:40px;
+	.Hind;
+	color:darken(@limegreen,20%);
+	margin-top: 3%;
+}
+
+.ImgFrame{
+	border-radius: 999px;
+	border:4px fade(gray,20%) solid;
+	// box-shadow: 1px 2px 1px 0px @browngray;
+}
+//Mixins
+
+body{
+	.Martel;
+	text-align: justify;
+	background-color: white;
+	text-indent: 20px;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+#about,#workshop, #speaker,#agency,#program{
+	h1{
+		.Heading;
+
+	}
+}
+
+#header{
+	height:@header_height;
+	text-indent: 0px;
+
+	h1{
+		.Bitter;
+		font-size: 60px;
+		line-height: 50px;
+		text-transform: uppercase;
+		margin-left: 5%;
+		padding-top: 10%;
+	}
+	h2{
+		margin-left: 5%;
+		.Hind;
+		letter-spacing: 10px;
+		margin-top:1px;
+		color:fade(@browngray,80%);
+	}
+}
+
+.page{
+	width:70%;
+	margin:3% auto;
+}
+
+#footer{
+	width:70%;
+	height:@contact_height;
+	background-color: fade(@browngray,90%);
+	color:fade(@brownwhite,60%);
+	margin:0 auto;
+	padding:2%;
+	.Hind;
+	p{
+		width:100%;
+		text-align: center;
+		margin-bottom:1px;
+	}
+}

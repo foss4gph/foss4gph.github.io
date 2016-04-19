@@ -133,9 +133,9 @@ body {
   margin-top: 3%;
 }
 #header {
-  height: 300px;
+  height: 375px;
   text-indent: 0px;
-  padding-bottom: 5%;
+  margin-bottom: 0%;
 }
 #header h1 {
   font-family: 'Bitter', serif;

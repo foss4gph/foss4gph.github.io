@@ -135,6 +135,7 @@ body {
 #header {
   height: 300px;
   text-indent: 0px;
+  padding-bottom: 5%;
 }
 #header h1 {
   font-family: 'Bitter', serif;

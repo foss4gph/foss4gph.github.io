@@ -34,6 +34,18 @@
 #about {
   text-align: justify;
 }
+#about h3 {
+  font-family: 'Knewave', cursive;
+  text-align: center;
+}
+#about a {
+  text-decoration: none;
+  color: #cc0000;
+}
+#about a:hover {
+  color: #006a1b;
+  text-decoration: none;
+}
 #program h3 {
   font-family: 'Hind', sans-serif;
 }
@@ -154,6 +166,13 @@ body {
   letter-spacing: 15px;
   margin-top: 1px;
   color: rgba(52, 48, 45, 0.8);
+}
+#header a {
+  color: #292929;
+}
+#header a:hover {
+  text-decoration: none;
+  color: #353535;
 }
 .page {
   width: 70%;

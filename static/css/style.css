@@ -35,7 +35,6 @@
   font-family: 'Hind', sans-serif;
   font-size: 18px;
   text-indent: 0px;
-  margin-bottom: 1%;
 }
 #announce img {
   width: 50%;
@@ -43,18 +42,18 @@
   margin: 2% auto;
   display: block;
 }
-#announce p {
-  width: 70%;
+#announce .announcement-block {
+  width: 100%;
   margin: 0 auto;
 }
 #announce .date_posted {
   text-align: left;
-  font-family: 'Martel', serif;
+  font-family: 'Knewave', cursive;
   font-size: 15px;
   margin-bottom: 1%;
   color: rgba(0, 0, 102, 0.7);
 }
-#announce .announcement {
+.announcement {
   font-family: 'Knewave', cursive;
   margin-top: 1%;
   width: 100%;
@@ -62,7 +61,7 @@
   display: block;
   color: rgba(134, 197, 67, 0.9);
 }
-#announce .announcement:hover {
+.announcement:hover {
   text-decoration: none;
   color: #009D28;
 }
@@ -235,7 +234,7 @@ body {
   font-family: 'Hind', sans-serif;
   font-size: 18px;
   text-indent: 0px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 #page_announce h1 {
   font-family: 'Martel', serif;
@@ -249,13 +248,13 @@ body {
   display: block;
   margin-bottom: 1%;
 }
-#page_announce p {
-  width: 70%;
+#page_announce .announcement-block {
+  width: 100%;
   margin: 0 auto;
 }
 #page_announce .date_posted {
   text-align: left;
-  font-family: 'Martel', serif;
+  font-family: 'Knewave', cursive;
   font-size: 15px;
   margin-top: 1%;
   margin-bottom: 1%;

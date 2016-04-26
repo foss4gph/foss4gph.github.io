@@ -145,6 +145,14 @@
   margin-bottom: 3%;
   color: rgba(0, 55, 14, 0.8);
 }
+#workshop .workshop-block a {
+  font-family: 'Hind', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+#workshop .workshop-block a:hover {
+  text-decoration: none;
+}
 #agency h1 {
   text-align: center;
   margin: 5% auto -1% auto;

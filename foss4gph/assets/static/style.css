@@ -40,3 +40,38 @@
 // div.page {
 //     background: #f1fbfe;
 // }
+#first_section {
+    padding-bottom: 4em;
+    padding-top: 3em;
+}
+
+#second_section{
+    padding:0em;
+} 
+
+#third_section, #fourth_section, #fifth_section, .footer{
+    padding:3em;
+}
+
+#fourth_section{
+    padding:3em;
+}
+
+#footer{
+    margin:3em;
+}
+
+#header_title {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#header_subtitle {
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+.tab p{
+    padding:2em;
+}

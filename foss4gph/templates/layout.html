@@ -42,27 +42,28 @@
 <!-- Page Contents -->
 <div>
 <!--1st Section-->
-	<div class="ui vertical masthead center aligned segment">
+	<div id="first_section" class="ui vertical masthead center aligned segment">
 		<div class="ui text container">
 			<img src="{{ '/static/images/Foss4g_Logo.png'|url }}" class="ui medium centered image">
-			<h1 class="ui header">
-				FOSS4G Philippines
+			<h1 id="header_title" class="ui header">
+				FOSS4G PHILIPPINES
 			</h1>
-			<h3>Some catchy tagline here!</h3>
-			<div class="ui big labels">
-					<a class="ui red circular label">2</a>
-					<a class="ui orange circular label">2</a>
-					<a class="ui yellow circular label">2</a>
-			</div>
+			<h3 id="header_subtitle">Promoting Free and Open Source Software for Geospatial Applications</h3>
+<!-- 			<div class="ui big labels">
+					<a class="ui green circular label"><i class="mail outline icon"></i></a>
+					<a class="ui green circular label">2</a>
+					<a class="ui green circular label">2</a>
+			</div> -->
 		</div>
 	</div>
 <!--2nd Section-->
-	<div class="ui vertical stripe segment">
+	<div id="second_section" class="ui vertical stripe segment">
 		<div class="ui middle aligned stackable grid container">
 			<div class="row">
 				<div class="eight wide column">
 					<h1 class="ui header">About FOSS4G PH</h1>
-					<p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+					<p>Since 2011, FOSS4G Philippines had been conducting workshops and talks to promote the use of free and open source technologies for geospatial applications.
+					</p>
 				</div>
 				<div class="six wide right floated column">
 					<img src="{{ '/static/images/Foss4g_Logo.png'|url }}" class="ui large rounded image">
@@ -77,29 +78,30 @@
 		</div>
 	</div>
 <!--3rd Section-->
-	<div class="ui vertical stripe segment">
+	<div id="third_section" class="ui vertical stripe segment">
 		<div class="ui middle aligned stackable grid container">
 			<!-- <div class="row"> -->
 		    <div id="context2" class="row">
-		    	<div class="five wide column">
+		    	<div class="eight wide column">
 		    		<h1 class="ui header">FOSS4G PH TALKS 2017</h1>
 		    	</div>
 <!-- 			    	<div class="eight wide column"> -->
-			    		<div class="ui secondary menu">
-			            <a class="item active" data-tab="event">Event</a>
+			    		<div class="ui secondary right floated menu">
+			            <a class="ui item active" data-tab="event">Event</a>
 			            <a class="item" data-tab="venue">Venue</a>
 			            <a class="item" data-tab="program">Program</a>
 			        </div>
 <!-- 			    	</div> -->
-						<div class="ui active tab" data-tab="event">
-						    <p>What's the event about</p>
-						     <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+						<div id="event_tab" class="ui active tab" data-tab="event">
+						    <p>
+						    	FOSS4G Philippines will conduct a series of talks on May 24, 2017 as a pre-conference event for the Philippine Geomatics Symposium 2017   - “Geospatial Digital Data for Development (Geospatial 3D): Acquisition, Modeling, Analysis, Visualization, and Applications of 3D Data”.
+						    </p>
 						</div>
-		        <div class="ui tab" data-tab="venue">
+		        <div id="venue_tab" class="ui tab" data-tab="venue">
 		            <p>Add a map here.</p>
 		            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
 		        </div>
-		        <div class="ui tab" data-tab="program">
+		        <div id="program_tab" class="ui tab" data-tab="program">
 		            <p>Add tentative program here.</p>
 		            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
 		        </div>
@@ -108,22 +110,70 @@
 		</div>
 	</div>
 <!--4th Section-->
-	<div class="ui vertical stripe segment">
+	<div id="fourth_section" class="ui vertical stripe segment">
 		<div class="ui text container">
 			<h1 class="ui header">Speakers</h1>
-			<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+			<div class="ui three stackable cards">
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="image">
+	            <img src="{{ '/static/images/nan.jpg'|url }}">
+	        </div>
+	    </div>
+	</div>
+
 		</div>
 	</div>
 
 <!--5th Section-->
-	<div class="ui vertical stripe segment">
+	<div id="fifth_section" class="ui vertical stripe segment">
 		<div class="ui middle aligned stackable grid container">
 			<h1 class="ui header">Registration</h1>
-			<p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+			<form class="ui form">
+  <div class="field">
+    <label>First Name</label>
+    <input name="first-name" placeholder="First Name" type="text">
+  </div>
+  <div class="field">
+    <label>Last Name</label>
+    <input name="last-name" placeholder="Last Name" type="text">
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input tabindex="0" class="hidden" type="checkbox">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
 		</div>
 	</div>
 
-
+<!-- Footer -->
 	<div class="ui inverted vertical footer segment">
 		<div class="ui container">
 			<div class="ui stackable inverted divided equal height stackable grid">
@@ -163,7 +213,7 @@
 	$('#context2 .menu .item')
   .tab({
     // special keyword works same as above
-    context: 'parent'
+    // context: 'parent'
   })
 ;
 </script>

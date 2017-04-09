@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-	<title>{% block title %}Welcome{% endblock %} — foss4gph</title>
+	<title>FOSS4G Philippines</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 	<link rel="stylesheet" type="text/css" href="{{ '/static/semantic/semantic.min.css'|url }}">
@@ -133,7 +133,7 @@
 									<img src="{{ '/static/images/philgeos_logo.png'|url }}" class="ui tiny right floated image">
 								</div> -->
 								<div class="row">
-									<h2>We're still prepping this out!</h2>
+									<h2 class="soon"><i>We're still prepping this out!</i></h2>
 								</div>
 
 								<!-- <div class="nine wide computer three wide tablet six wide mobile column">
@@ -153,7 +153,7 @@
 	<div id="fourth_section" class="ui vertical stripe segment">
 		<div class="ui text container">
 			<h1 class="ui header">Speakers</h1>
-			<h2>We're still prepping this out!</h2>
+			<h2 class="soon"><i>We're still prepping this out!</i></h2>
 			<!-- <div class="ui three stackable cards">
 			<div class="card">
 					<div class="image">
@@ -191,7 +191,7 @@
 	</div>
 
 <!--5th Section-->
-	<div id="fifth_section" class="ui vertical stripe segment">
+	<!-- <div id="fifth_section" class="ui vertical stripe segment">
 	<h1 class="ui header">Registration</h1>
 	<div class="row">
 		<div class="ui middle aligned stackable grid container">
@@ -215,34 +215,13 @@
 			</form>
 		</div>
 		</div>
-	</div>
+	</div> -->
 
 <!-- Footer -->
-	<div class="ui inverted vertical footer segment">
+	<div id="footer" class="ui inverted vertical footer segment">
 		<div class="ui container">
 			<div class="ui stackable inverted divided equal height stackable grid">
-				<div class="three wide column">
-					<h4 class="ui inverted header">About</h4>
-					<div class="ui inverted link list">
-						<a href="#" class="item">Sitemap</a>
-						<a href="#" class="item">Contact Us</a>
-						<a href="#" class="item">Religious Ceremonies</a>
-						<a href="#" class="item">Gazebo Plans</a>
-					</div>
-				</div>
-				<div class="three wide column">
-					<h4 class="ui inverted header">Services</h4>
-					<div class="ui inverted link list">
-						<a href="#" class="item">Banana Pre-Order</a>
-						<a href="#" class="item">DNA FAQ</a>
-						<a href="#" class="item">How To Access</a>
-						<a href="#" class="item">Favorite X-Men</a>
-					</div>
-				</div>
-				<div class="seven wide column">
-					<h4 class="ui inverted header">Footer Header</h4>
-					<p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-				</div>
+				<h4 class="ui inverted header"><i>FOSS4G PHILIPPINES © 2017</i></h4>
 			</div>
 		</div>
 	</div>
@@ -258,7 +237,7 @@
 	.tab();
 ;
 
-var center =  { lat: 14.6554647542149, lng: -238.9321875572205 };
+var center =  { lat: 14.655070322592467, lng: -238.9310717582703 };
 var zoom = 16;
 	var map = L.map('venue', {
 			center: [center.lat, center.lng],
@@ -267,6 +246,8 @@ var zoom = 16;
 			// zoomControl:false,
 			scrollWheelZoom:false
 	});
+
+var marker = L.marker([center.lat, center.lng]).addTo(map);
 
 // 	var basemap = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // 	maxZoom: 19,
@@ -278,4 +259,21 @@ var basemap = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{
 });
 
 basemap.addTo(map);
+
+
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+    this._div.innerHTML = `<h3>University of the Philippines Diliman</h3>
+    <p>Melchor Hall, College of Engineering</p>`;
+};
+
+info.addTo(map);
 </script>

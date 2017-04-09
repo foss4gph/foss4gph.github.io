@@ -127,3 +127,11 @@
 .soon{
     color:#545050;
 }
+
+.image_back{
+    min-height: 150px;
+}
+
+// #foss_1{
+//     background-image: url("/static/images/foss_1.jpg");
+// }

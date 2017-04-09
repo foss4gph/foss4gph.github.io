@@ -4,11 +4,14 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 	<link rel="stylesheet" type="text/css" href="{{ '/static/semantic/semantic.min.css'|url }}">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<script
 		src="https://code.jquery.com/jquery-3.1.1.min.js"
 		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 	<script src="{{ '/static/semantic/semantic.min.js'|url }}"></script>
+
 
 </head>
 
@@ -79,97 +82,138 @@
 	</div>
 <!--3rd Section-->
 	<div id="third_section" class="ui vertical stripe segment">
-		<div class="ui middle aligned stackable grid container">
+		<div class="ui stackable grid container">
 			<!-- <div class="row"> -->
-		    <div id="context2" class="row">
-		    	<div class="eight wide column">
-		    		<h1 class="ui header">FOSS4G PH TALKS 2017</h1>
-		    	</div>
+				<div id="context2" class="row">
+					<div class="row">
+						<h1 class="ui header">FOSS4G PH TALKS 2017</h1>
+													<div class="ui secondary left floated menu">
+													<button class="ui black basic item active button" data-tab="event">Event</button>
+													<button class="ui black basic item button" data-tab="program">Program</button>
+<!-- 									<a class="ui item active" data-tab="event">Event</a>
+									<a class="item" data-tab="venue">Venue</a>
+									<a class="item" data-tab="program">Program</a> -->
+							</div>
+					</div>
 <!-- 			    	<div class="eight wide column"> -->
-			    		<div class="ui secondary right floated menu">
-			            <a class="ui item active" data-tab="event">Event</a>
-			            <a class="item" data-tab="venue">Venue</a>
-			            <a class="item" data-tab="program">Program</a>
-			        </div>
+<!-- 							<div class="ui secondary right floated menu">
+									<a class="ui item active" data-tab="event">Event</a>
+									<a class="item" data-tab="venue">Venue</a>
+									<a class="item" data-tab="program">Program</a>
+							</div> -->
 <!-- 			    	</div> -->
 						<div id="event_tab" class="ui active tab" data-tab="event">
-						    <p>
-						    	FOSS4G Philippines will conduct a series of talks on May 24, 2017 as a pre-conference event for the Philippine Geomatics Symposium 2017   - “Geospatial Digital Data for Development (Geospatial 3D): Acquisition, Modeling, Analysis, Visualization, and Applications of 3D Data”.
-						    </p>
+<!-- 							<div class="ui stackable grid container">
+
+								</div> -->
+
+						<div class="ui grid">
+<!-- 								<div class="four wide column">
+									<img src="{{ '/static/images/philgeos_logo.png'|url }}" class="ui tiny right floated image">
+								</div> -->
+								<div class="row">
+									<h4>
+										FOSS4G Philippines will conduct a series of talks on May 24, 2017 as a pre-conference event for the Philippine Geomatics Symposium 2017   - “Geospatial Digital Data for Development (Geospatial 3D): Acquisition, Modeling, Analysis, Visualization, and Applications of 3D Data”.
+									</h4>
+
+								</div>
+
+								<!-- <div class="nine wide computer three wide tablet six wide mobile column">
+										<div class="ui segment">Content</div>
+								</div> -->
 						</div>
-		        <div id="venue_tab" class="ui tab" data-tab="venue">
-		            <p>Add a map here.</p>
-		            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-		        </div>
-		        <div id="program_tab" class="ui tab" data-tab="program">
-		            <p>Add tentative program here.</p>
-		            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-		        </div>
-		    </div>
+					</div>
+						<!-- <div id="venue_tab" class="ui tab" data-tab="venue">
+								<p>Add a map here.</p>
+								<p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+						</div> -->
+						<div id="program_tab" class="ui tab" data-tab="program">
+								<div class="ui grid">
+<!-- 								<div class="four wide column">
+									<img src="{{ '/static/images/philgeos_logo.png'|url }}" class="ui tiny right floated image">
+								</div> -->
+								<div class="row">
+									<h2>We're still prepping this out!</h2>
+								</div>
+
+								<!-- <div class="nine wide computer three wide tablet six wide mobile column">
+										<div class="ui segment">Content</div>
+								</div> -->
+						</div>
+						</div>
+				</div>
 			<!-- </div> -->
 		</div>
+
+	</div>
+	<div id="venue">
+		
 	</div>
 <!--4th Section-->
 	<div id="fourth_section" class="ui vertical stripe segment">
 		<div class="ui text container">
 			<h1 class="ui header">Speakers</h1>
-			<div class="ui three stackable cards">
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	    <div class="card">
-	        <div class="image">
-	            <img src="{{ '/static/images/nan.jpg'|url }}">
-	        </div>
-	    </div>
-	</div>
+			<h2>We're still prepping this out!</h2>
+			<!-- <div class="ui three stackable cards">
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+			<div class="card">
+					<div class="image">
+							<img src="{{ '/static/images/nan.jpg'|url }}">
+					</div>
+			</div>
+	</div> -->
 
 		</div>
 	</div>
 
 <!--5th Section-->
 	<div id="fifth_section" class="ui vertical stripe segment">
+	<h1 class="ui header">Registration</h1>
+	<div class="row">
 		<div class="ui middle aligned stackable grid container">
-			<h1 class="ui header">Registration</h1>
+
 			<form class="ui form">
-  <div class="field">
-    <label>First Name</label>
-    <input name="first-name" placeholder="First Name" type="text">
-  </div>
-  <div class="field">
-    <label>Last Name</label>
-    <input name="last-name" placeholder="Last Name" type="text">
-  </div>
-  <div class="field">
-    <div class="ui checkbox">
-      <input tabindex="0" class="hidden" type="checkbox">
-      <label>I agree to the Terms and Conditions</label>
-    </div>
-  </div>
-  <button class="ui button" type="submit">Submit</button>
-</form>
+				<div class="field">
+					<label>First Name</label>
+					<input name="first-name" placeholder="First Name" type="text">
+				</div>
+				<div class="field">
+					<label>Last Name</label>
+					<input name="last-name" placeholder="Last Name" type="text">
+				</div>
+				<div class="field">
+					<div class="ui checkbox">
+						<input tabindex="0" class="hidden" type="checkbox">
+						<label>I agree to the Terms and Conditions</label>
+					</div>
+				</div>
+				<button class="ui button" type="submit">Submit</button>
+			</form>
+		</div>
 		</div>
 	</div>
 
@@ -211,9 +255,27 @@
 
 <script>
 	$('#context2 .menu .item')
-  .tab({
-    // special keyword works same as above
-    // context: 'parent'
-  })
+	.tab();
 ;
+
+var center =  { lat: 14.6554647542149, lng: -238.9321875572205 };
+var zoom = 16;
+	var map = L.map('venue', {
+			center: [center.lat, center.lng],
+			zoom: zoom,
+			attributionControl:false,
+			// zoomControl:false,
+			scrollWheelZoom:false
+	});
+
+// 	var basemap = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// 	maxZoom: 19,
+// 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+// });
+var basemap = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+
+basemap.addTo(map);
 </script>

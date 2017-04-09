@@ -1,4 +1,4 @@
-// body {
+/*// body {
 //     font-family: 'Verdana', sans-serif;
 //     margin: 50px 25px;
 // }
@@ -39,7 +39,7 @@
 
 // div.page {
 //     background: #f1fbfe;
-// }
+// }*/
 #first_section {
     padding-bottom: 4em;
     padding-top: 3em;
@@ -49,12 +49,23 @@
     padding:0em;
 } 
 
-#third_section, #fourth_section, #fifth_section, .footer{
+#second_section, #third_section, #fourth_section, #fifth_section, .footer{
     padding:3em;
+}
+
+#third_section{
+    min-height: 300px;
+    // max-height: 300px;
 }
 
 #fourth_section{
     padding:3em;
+}
+
+/*Map Css*/
+#venue{
+    height: 300px;
+    width: auto;
 }
 
 #footer{
@@ -74,4 +85,24 @@
 
 .tab p{
     padding:2em;
+}
+
+#event_tab div, #program_tab div{
+    // width:80%;
+    padding:1em;
+    padding-top:2em;
+    // padding-bottom:2em;
+}
+
+#event_tab h4{
+    line-height: 25px;
+}
+
+#event_tab img{
+    width:100px;
+    height:auto;
+}
+
+#context2 .row{
+    width:100%;
 }

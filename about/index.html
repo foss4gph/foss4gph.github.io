@@ -147,7 +147,14 @@
 									<h4>
 										FOSS4G Philippines will conduct a series of talks on May 24, 2017 as a pre-conference event for the Philippine Geomatics Symposium 2017   - “Geospatial Digital Data for Development (Geospatial 3D): Acquisition, Modeling, Analysis, Visualization, and Applications of 3D Data”.
 									</h4>
-
+									<br>
+									<h2>CALL FOR SPEAKERS!</h2>
+									<div id="call_speakers" class="row">
+										<h4>Have an idea, a weekend project, an algorithm, a new technique using FOSS techniques or technologies? Be a speaker in our event!</h4>
+										
+										<h3><a href="http://foss4gph.github.io/"><b>Sign up here!</b></a></h3>
+									</div>
+									
 								</div>
 
 								<!-- <div class="nine wide computer three wide tablet six wide mobile column">
@@ -303,7 +310,10 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = `<h3>University of the Philippines Diliman</h3>
+    this._div.innerHTML = `
+    <i><p>Venue:</p></i>
+    <div id="info_divider" class="ui divider"></div>	
+    <h3 id="info_h3">University of the Philippines Diliman</h3>
     <p>Melchor Hall, College of Engineering</p>`;
 };
 

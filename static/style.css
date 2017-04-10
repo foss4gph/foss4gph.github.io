@@ -88,7 +88,7 @@
     padding:2em;
 }
 
-#event_tab div, #program_tab div{
+#event_tab .grid, #program_tab .grid{
     // width:80%;
     padding:1em;
     padding-top:2em;
@@ -135,3 +135,41 @@
 // #foss_1{
 //     background-image: url("/static/images/foss_1.jpg");
 // }
+
+#third_section{
+    h2{
+        width:100%;
+        margin-bottom: 0px;
+    }
+}
+
+#call_speakers{
+    line-height: 5px;
+    margin-top: 0px;
+    padding-top:0em;
+
+    h4{
+        margin-top: 0px;
+    }
+
+    h3{
+        margin-top:10px;
+    }
+}
+
+.info{
+    .divider{
+        margin:1px;
+    }
+    h3{
+        margin-top: 5px;
+    }
+}
+
+#info_divider{
+    margin:1px;
+}
+
+#info_h3{
+    margin-top:5px;
+}

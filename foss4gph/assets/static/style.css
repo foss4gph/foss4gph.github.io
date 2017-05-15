@@ -175,3 +175,8 @@
 #info_h3{
     margin-top:5px;
 }
+
+#program_tab, #program_table{
+    width: 100%;
+}
+

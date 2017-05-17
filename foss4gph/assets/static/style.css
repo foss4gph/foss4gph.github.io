@@ -192,6 +192,10 @@
     margin:auto;
     padding-right: 50px;
 }
- #speaker_segments .speaker_talk{
-    background-color: rgb(90,100,161);
- }
+#speaker_segments .speaker_talk{
+   background-color: rgb(90,100,161);
+}
+#reg_button{
+    color:white;
+    text-decoration: none;
+}

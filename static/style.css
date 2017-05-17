@@ -180,3 +180,22 @@
     width: 100%;
 }
 
+#speaker_segments{
+    width:80%;
+    margin:0 auto;
+}
+#speaker_segments img{
+    margin:0 auto;
+}
+
+#speaker_segments .speaker_bio{
+    margin:auto;
+    padding-right: 50px;
+}
+#speaker_segments .speaker_talk{
+   background-color: rgb(90,100,161);
+}
+#reg_button{
+    color:white;
+    text-decoration: none;
+}
